@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rP" prefHeight="665.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/11.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.orderController">
+    <children>
+        <TextArea fx:id="order" editable="false" layoutX="31.0" layoutY="56.0" prefHeight="513.0" prefWidth="537.0" />
+        <TextField fx:id="totalCost" alignment="CENTER_RIGHT" editable="false" layoutX="112.0" layoutY="608.0" prefHeight="25.0" prefWidth="175.0" />
+        <Label layoutX="244.0" layoutY="20.0" text="Order Details">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Label>
+        <Label layoutX="27.0" layoutY="608.0" text="Total Due:">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+        <Button fx:id="clear" layoutX="472.0" layoutY="618.0" mnemonicParsing="false" onMouseClicked="#clearPizzas" prefHeight="25.0" prefWidth="97.0" text="Clear Order">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+        <Button fx:id="back" layoutX="472.0" layoutY="578.0" mnemonicParsing="false" onMouseClicked="#back" prefHeight="30.0" prefWidth="97.0" text="Back">
+         <font>
+            <Font size="14.0" />
+         </font></Button>
+    </children>
+</AnchorPane>

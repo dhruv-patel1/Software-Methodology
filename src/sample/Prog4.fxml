@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="665.0" prefWidth="599.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+    <children>
+        <ComboBox fx:id="type" layoutX="21.0" layoutY="68.0" onAction="#pizzaChosen" prefWidth="150.0" />
+        <ComboBox fx:id="size" layoutX="21.0" layoutY="136.0" prefWidth="150.0" />
+        <ImageView fx:id="img" fitHeight="200.0" fitWidth="267.0" layoutX="271.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true" />
+        <Label layoutX="23.0" layoutY="41.0" text="Pizza">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+        <Label layoutX="21.0" layoutY="105.0" text="Size">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+        <TextArea fx:id="output" editable="false" layoutY="586.0" prefHeight="82.0" prefWidth="599.0" />
+        <ListView fx:id="toppings" layoutX="16.0" layoutY="255.0" prefHeight="314.0" prefWidth="159.0" />
+        <Button fx:id="add" layoutX="184.0" layoutY="334.0" mnemonicParsing="false" onMouseClicked="#addTopping" prefHeight="25.0" prefWidth="127.0" text="Add Topping &gt;&gt;" />
+        <Button fx:id="remove" layoutX="185.0" layoutY="382.0" mnemonicParsing="false" onMouseClicked="#removeTopping" text="&lt;&lt; Remove Topping" />
+        <ListView fx:id="selectedToppings" layoutX="325.0" layoutY="255.0" prefHeight="314.0" prefWidth="159.0" />
+        <Label layoutX="69.0" layoutY="226.0" text="Toppings">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+        <Label layoutX="352.0" layoutY="226.0" text="Selected Toppings">
+         <font>
+            <Font size="13.0" />
+         </font></Label>
+        <Button fx:id="clear" layoutX="201.0" layoutY="497.0" mnemonicParsing="false" onMouseClicked="#clearSelected" text="Clear Selection" />
+        <Button fx:id="addPizzaOrder" layoutX="498.0" layoutY="434.0" mnemonicParsing="false" onMouseClicked="#addToOrder" text="Add to Order" />
+        <Button fx:id="showPizzaOrder" layoutX="497.0" layoutY="497.0" mnemonicParsing="false" onMouseClicked="#showOrder" prefHeight="25.0" prefWidth="87.0" text="Show Order" />
+    </children>
+</AnchorPane>
